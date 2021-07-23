@@ -1,5 +1,10 @@
+const startBtn = document.querySelector(".startBtn");
+const stopBtn = document.querySelector(".stopBtn");
 const counterDisplay = document.querySelector("h3");
 let counter = 0;
+let timer = 0;
+let timeOut = 0;
+
 // Fonction pour le création et le déplacement d'une bulle
 const bubbleMaker = () => {
   // Créer un span dans le document
@@ -10,7 +15,7 @@ const bubbleMaker = () => {
   document.body.appendChild(bubble);
 
   // Créer un nombre aléatoire entre 100 et 300
-  const size = Math.random() * 200 + 100 + "px";
+  const size = Math.random() * 100 + 100 + "px";
   // La height et la width injectées seront les memes
   bubble.style.height = size;
   bubble.style.width = size;
@@ -28,13 +33,33 @@ const bubbleMaker = () => {
     counter++;
     counterDisplay.textContent = counter;
     bubble.remove();
+    return;
   });
 
   // Détruire la bulle quand elle est en haut
   setTimeout(() => {
     bubble.remove();
-  }, 8000);
+  }, 10000);
 };
 
+// Démarrage de la partie
+startBtn.addEventListener("click", () => {
+  stopBtn.classList.replace("btnInvisible", "btnVisible");
+  startBtn.classList.replace("btnVisible", "btnInvisible");
+  timer = setInterval(bubbleMaker, 3000);
+  counterDisplay.textContent = 0;
+  counter = 0;
+});
+
+// Arret (pause) de la partie
+stopBtn.addEventListener("click", () => {
+  startBtn.classList.replace("btnInvisible", "btnVisible");
+  stopBtn.classList.replace("btnVisible", "btnInvisible");
+
+  clearInterval(timer);
+});
+
+// Game over
+
 // Créer plusieurs bulles a interval différent
-setInterval(bubbleMaker, Math.random() * 1000 + 100);
+//setInterval(bubbleMaker, 3000);
