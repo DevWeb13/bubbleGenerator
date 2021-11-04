@@ -2,10 +2,10 @@
 
 @author: [DevWeb13](https://twitter.com/DeveloppementW1)
 
-Génération de bulles en JS. En cliquant dessus, la bulle disparait et incrémente un compteur.
+Generation of bubbles in JS. By clicking on it, the bubble disappears and increments a counter.
 
-Réalisé grace au tutoriel YouTube: ["[Cours Javascript] Apprendre Javascript de A à Z – Le DOM (2/6)"](https://www.youtube.com/watch?v=6q-zt0aQ74U&list=PLEiMYEzpB4QuS8AXU9eAz1aw_WBknPn1E&index=2) de ["From Scratch()"]( https://twitter.com/KobeKenjo).
+Realized thanks to the YouTube tutorial: ["[Cours Javascript] Apprendre Javascript de A à Z – Le DOM (2/6)"](https://www.youtube.com/watch?v=6q-zt0aQ74U&list=PLEiMYEzpB4QuS8AXU9eAz1aw_WBknPn1E&index=2) of ["From Scratch()"]( https://twitter.com/KobeKenjo).
 
-Un grand merci a lui!!
+A big thank you to him!!
 
-# [SITE FINAL](https://devweb13.github.io/SidebarHamburger/)
+# [FINAL SITE](https://devweb13.github.io/SidebarHamburger/)
